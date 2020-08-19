@@ -1,1 +1,1 @@
-Implementation of some data structures using c language.
+Implementation of some basic Data Structures using C language.
