@@ -54,8 +54,8 @@ int check(Node *root,int min,int max,int *height)
                 return 0;
         int lh=0 , rh = 0,l = 0,r = 0;
 
-        l = check(root->left,min,root->data-1,&lh) ;
-        r = check(root->right,root->data+1,max,&rh);
+        l = check(root->left,min,root->data,&lh) ;
+        r = check(root->right,root->data,max,&rh);
         if(root->cl=='B')
                 *height = 1 + lh;
         else
