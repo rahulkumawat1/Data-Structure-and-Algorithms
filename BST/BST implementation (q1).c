@@ -67,7 +67,7 @@ Node *findMin(Node *head)
 	else if(!head->left)
 	{//printf("%d\n",head->data);
 		return head;}
-	findMin(head->left);	
+	return findMin(head->left);	
 }
 
 Node *findMax(Node *head)
@@ -82,7 +82,7 @@ Node *findMax(Node *head)
 		//printf("%d\n",head->data);
 		return head;
 	}
-	findMax(head->right);
+	return findMax(head->right);
 }
 
 Node *predecessor(Node *head,int i)
