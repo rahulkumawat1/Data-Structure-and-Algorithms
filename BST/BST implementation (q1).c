@@ -54,9 +54,9 @@ Node *search(Node *temp,int k)
 		return temp;
 	}
 	if(temp->data>k)
-		search(temp->left,k);
+		return search(temp->left,k);
 	else
-		search(temp->right,k);
+		return search(temp->right,k);
 }
 
 Node *findMin(Node *head)
